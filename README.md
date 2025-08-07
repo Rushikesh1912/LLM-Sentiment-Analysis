@@ -1,50 +1,79 @@
-# Employee Sentiment Analysis Project
+# 📊 Employee Sentiment Analysis Project
 
-This project analyzes employee feedback using Natural Language Processing (NLP) to classify sentiment and identify employee flight risks. This is part of the **Final LLM Assessment**.
+This project performs **Sentiment Analysis** on employee feedback using NLP techniques. The goal is to label sentiments, explore trends, identify flight risks, and present insights visually.
 
-## 📁 Files in this Repo
+## ✅ Project Summary
 
-- `llm_sentiment_project.ipynb` – Jupyter notebook with complete analysis
-- `test(in).csv` – Raw dataset
-- `processed_sentiment_data.csv` – Sentiment-labeled dataset
-- `flight_risk_employees.csv` – List of employees at potential risk
-- `monthly_sentiment_trend.png` – Monthly sentiment trend plot
-- `regression_trend.png` – Linear regression of sentiment over time
-- `sentiment_distribution.png` – Distribution of sentiment labels
-- `wordcloud_positive.png` – Wordcloud for positive sentiments
+- **Sentiment Labeling**: Positive, Neutral, Negative (via TextBlob)
+- **EDA & Visualization**: Explore and understand feedback distribution
+- **Monthly Sentiment Scoring**: Track sentiment over time
+- **Employee Ranking**: Based on average sentiment polarity
+- **Flight Risk Detection**: Identify consistently negative feedback
+- **Trend Analysis**: Linear regression on sentiment scores
 
-## ⚙️ Setup Instructions
+---
 
-1. **Clone this repo** or download the ZIP
-2. Make sure you have the following Python libraries installed:
-```bash
-pip install pandas numpy matplotlib seaborn wordcloud textblob scikit-learn
-Run the notebook:
+## 🗂️ Files in this Repository
 
-bash
-Copy
-Edit
-jupyter notebook llm_sentiment_project.ipynb
+| File Name                     | Description                                       |
+|------------------------------|---------------------------------------------------|
+| `llm_sentiment_project.ipynb` | Jupyter Notebook with full analysis              |
+| `test(in).csv`               | Input dataset of employee feedback               |
+| `processed_sentiment_data.csv` | CSV with sentiment labels                        |
+| `flight_risk_employees.csv`  | Flagged employees at risk                        |
+| `README.md`                  | Project documentation                            |
+| `wordcloud_positive.png`     | Wordcloud of positive sentiment words            |
+| `monthly_sentiment_trend.png` | Monthly sentiment trend                          |
+| `regression_trend.png`       | Linear regression of sentiment trend             |
+| `sentiment_distribution.png` | Bar chart of sentiment distribution              |
 
+---
 
-📊 Methodology Overview
+## 🖼️ Visualizations
 
-EDA: Exploratory Data Analysis on text column
+### 📌 Sentiment Distribution
+![Sentiment Distribution](sentiment_distribution.png)
 
-Text Preprocessing: Cleaned and tokenized sentences
+### 🌤️ Wordcloud of Positive Feedback
+![Wordcloud](wordcloud_positive.png)
 
-Sentiment Analysis: Used TextBlob to label each feedback as Positive, Neutral, or Negative
+### 📅 Monthly Sentiment Trend
+![Monthly Trend](monthly_sentiment_trend.png)
+
+### 📉 Sentiment Trend Regression Line
+![Regression Trend](regression_trend.png)
+
+---
+
+📌 Methodology Overview
+
+🔍 Step-by-Step Process:
+Text Cleaning & Preprocessing
+
+Sentiment Scoring using TextBlob
 
 Visualization:
 
-Sentiment distribution
+Bar chart of sentiments
 
-Wordcloud of positive words
+Wordcloud (positive feedback)
 
-Monthly sentiment trends
+Monthly sentiment analysis
 
-Regression line to observe sentiment shift
+Regression line to show sentiment shift
 
-Employee Ranking: Sorted based on average sentiment polarity
+Employee Ranking by polarity
 
-Flight Risk Detection: Employees with consistent negative feedback were flagged
+Flight Risk Analysis using thresholds on negative sentiment
+
+🔐 Environment
+No external APIs used
+
+No .env file required
+
+## 🛠️ Setup Instructions
+
+1. **Clone this repo** or download the ZIP
+2. Install required packages:
+```bash
+pip install pandas numpy matplotlib seaborn wordcloud textblob scikit-learn
